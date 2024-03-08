@@ -1,0 +1,46 @@
+.bigCard_container {
+  width: 80%;
+  margin: auto;
+  padding-bottom: 80px;
+}
+
+.bigCard_body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.bigCard_text > h5 {
+  color: #910a67;
+  font-size: 20px;
+  font-family: "Roboto Mono";
+}
+
+.bigCard_text > h1 {
+  font-size: 40px;
+  font-family: "Roboto Mono";
+  background: rgb(238, 174, 202);
+  background: linear-gradient(
+    90deg,
+    rgba(238, 174, 202, 1) 0%,
+    rgba(148, 187, 233, 1) 100%
+  );
+  background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.bigCard_text > p {
+  color: #f2f2f2;
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.bigCard_photo > img {
+  width: 300px;
+  border-radius: 50%;
+  box-shadow: 7px 1px 51px 38px rgba(0, 0, 0, 0.4);
+}

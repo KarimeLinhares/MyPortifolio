@@ -8,9 +8,10 @@ import { BigcardComponent } from './components/bigcard/bigcard.component';
 import { HomeComponent } from './pages/home/home.component';
 import { TechcardComponent } from './components/techcard/techcard.component';
 import { AboutComponent } from './components/about/about.component';
+import { ImgCardComponent } from './components/techcard/img-card/img-card.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuBarComponent, BigcardComponent, HomeComponent, TechcardComponent, AboutComponent],
+  declarations: [AppComponent, MenuBarComponent, BigcardComponent, HomeComponent, TechcardComponent, AboutComponent, ImgCardComponent],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

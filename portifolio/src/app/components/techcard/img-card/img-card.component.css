@@ -1,0 +1,33 @@
+.techStack_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.techStack_imgBox > .svgs > img {
+  width: 70px;
+}
+
+/* .techStack_imgBox {
+  width: 100%;
+  background: linear-gradient(
+    130deg,
+    #727272 0%,
+    #494949 44.03%,
+    #272727 99.99%,
+    #000 100%
+  );
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.techStack_imgBox > .svgs {
+  width: 80%;
+}
+
+.techStack_imgBox > .svgs > img {
+  width: 70px;
+} */

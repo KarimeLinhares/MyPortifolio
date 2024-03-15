@@ -4,10 +4,11 @@
       <h3>My Tech Stack</h3>
       <p>Technologies I've been working with</p>
     </div>
-    <div class="techStack_imgBox">
-      <div class="svgs">
-        <img src="../../../assets/angular.svg" alt="" srcset="" />
-      </div>
+    <div class="tech_row">
+      <app-img-card
+        *ngFor="let database of items"
+        techImg="{{ database.img }}"
+      ></app-img-card>
     </div>
   </div>
 </div>

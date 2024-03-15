@@ -27,52 +27,10 @@
   text-align: justify;
 }
 
-.about_buttons > button {
-  width: 300px;
-  height: 100px;
-  border-radius: 13px;
-  border: 2px solid #910a67;
-  background-color: transparent;
-}
-
-.about_buttons-content {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 10px;
-}
-
-.about_buttons-content > .text {
+.button-links_container {
   display: flex;
   flex-direction: column;
-}
-
-.about_buttons-content > .text > h1 {
-  color: #fff;
-  font-family: Roboto Mono;
-  font-size: 20px;
-  font-weight: 700;
-  padding-bottom: 10px;
-}
-
-.about_buttons-content > .text > a {
-  color: #fff;
-  font-family: Roboto;
-  font-size: 15px;
-  font-weight: 100;
-  text-decoration: none;
-  width: 10%;
-}
-
-.about_buttons-content > .text > a:hover {
-  text-decoration: underline;
-}
-
-.svg > img {
-  width: 30px;
-}
-
-.about_buttons > button:hover {
-  cursor: pointer;
-  background-color: #828282;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }

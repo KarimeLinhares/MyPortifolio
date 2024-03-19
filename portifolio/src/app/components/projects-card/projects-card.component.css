@@ -1,0 +1,38 @@
+.projects-cards_container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.text {
+  color: #f2f2f2;
+}
+
+.text > h3 {
+  font-size: 30px;
+  font-family: "Roboto Mono";
+}
+
+.text > p {
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 100;
+}
+
+.card_container {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 30px;
+}

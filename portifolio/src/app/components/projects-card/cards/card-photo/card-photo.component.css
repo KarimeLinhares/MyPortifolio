@@ -1,0 +1,11 @@
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.card_img {
+  width: 220px;
+  height: 150px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}

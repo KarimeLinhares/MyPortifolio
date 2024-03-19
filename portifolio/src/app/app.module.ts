@@ -10,9 +10,26 @@ import { TechcardComponent } from './components/techcard/techcard.component';
 import { AboutComponent } from './components/about/about.component';
 import { ImgCardComponent } from './components/techcard/img-card/img-card.component';
 import { ButtonComponent } from './components/atom/button/button.component';
+import { ProjectsCardComponent } from './components/projects-card/projects-card.component';
+import { CardsComponent } from './components/projects-card/cards/cards.component';
+import { CardPhotoComponent } from './components/projects-card/cards/card-photo/card-photo.component';
+import { CardLabelComponent } from './components/projects-card/cards/card-label/card-label.component';
 
 @NgModule({
-  declarations: [AppComponent, MenuBarComponent, BigcardComponent, HomeComponent, TechcardComponent, AboutComponent, ImgCardComponent, ButtonComponent],
+  declarations: [
+    AppComponent,
+    MenuBarComponent,
+    BigcardComponent,
+    HomeComponent,
+    TechcardComponent,
+    AboutComponent,
+    ImgCardComponent,
+    ButtonComponent,
+    ProjectsCardComponent,
+    CardsComponent,
+    CardPhotoComponent,
+    CardLabelComponent,
+  ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
   bootstrap: [AppComponent],

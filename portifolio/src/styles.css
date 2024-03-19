@@ -10,14 +10,15 @@
 }
 
 body {
-  min-height: 100vh;
+  min-width: 1000px;
   align-items: center;
   justify-content: center;
   background: linear-gradient(
-    130deg,
-    #000 0%,
-    #272727 44.03%,
-    #494949 99.99%,
-    #727272 100%
-  );
+      130deg,
+      #000 0%,
+      #272727 44.03%,
+      #494949 99.99%,
+      #727272 100%
+    )
+    fixed;
 }

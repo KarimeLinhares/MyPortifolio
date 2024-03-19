@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.content {
+  width: 80%;
+  margin: 10px 10px 10px 10px;
+}
+
+.title {
+  color: #cccccc;
+  font-family: "Roboto Mono";
+  font-size: 10px;
+  margin-bottom: 10px;
+}
+
+.sub {
+  height: 140px;
+  color: #cccccc;
+  font-family: "Roboto";
+  font-size: 12px;
+  text-align: justify;
+}
+
+.tech {
+  height: 50px;
+  text-align: justify;
+}
+
+.tech > p {
+  color: #cccccc;
+  font-family: "Roboto";
+  font-size: 12px;
+}
+
+.links_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+
+.links > a {
+  display: flex;
+  align-items: center;
+  height: 30px;
+  width: 70px;
+  text-decoration: none;
+  color: #cccccc;
+  font-family: "Roboto";
+  font-size: 12px;
+}
+
+.links > a:hover {
+  text-decoration: underline;
+}
+
+.links > .icon {
+  width: 15px;
+}

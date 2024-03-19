@@ -1,0 +1,19 @@
+<div class="projects-cards_container">
+  <div class="projects-body">
+    <div class="text">
+      <h3>My Projects</h3>
+      <p>Things I've built so far</p>
+    </div>
+    <div class="card_container">
+      <app-cards
+        *ngFor="let data of items"
+        projImg="{{ data.proj }}"
+        title="{{ data.title }}"
+        sub="{{ data.sub }}"
+        tech="{{ data.tech }}"
+        view="{{ data.view }}"
+        code="{{ data.code }}"
+      ></app-cards>
+    </div>
+  </div>
+</div>

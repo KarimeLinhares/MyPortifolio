@@ -5,24 +5,16 @@
         <h1>{{ title }}</h1>
         <div class="sub_container">
           <div class="sub-items">
-            <a class="link" href="{{ link_a }}">{{ subtitle_a }}</a>
-            <img
-              class="sublogo"
-              [src]="[sublogo_a]"
-              alt=""
-              target="_blank"
-              rel="noopener noreferrer"
-            />
+            <a class="link" href="{{ link_a }}" target="_blank">{{
+              subtitle_a
+            }}</a>
+            <img class="sublogo" [src]="[sublogo_a]" alt="" />
           </div>
           <div class="sub-items">
-            <a class="link" [href]="[link_b]">{{ subtitle_b }}</a>
-            <img
-              class="sublogo"
-              [src]="[sublogo_b]"
-              alt=""
-              target="_blank"
-              rel="noopener noreferrer"
-            />
+            <a class="link" [href]="[link_b]" target="_blank">{{
+              subtitle_b
+            }}</a>
+            <img class="sublogo" [src]="[sublogo_b]" alt="" />
           </div>
         </div>
       </div>

@@ -39,8 +39,13 @@
   font-weight: 400;
 }
 
-.bigCard_photo > img {
+.bigCard_photo > a > img {
   width: 300px;
   border-radius: 50%;
   box-shadow: 7px 1px 51px 38px rgba(0, 0, 0, 0.4);
+  transition: transform 0.8s;
+}
+
+.bigCard_photo > a > img:hover {
+  transform: scale(1.1);
 }

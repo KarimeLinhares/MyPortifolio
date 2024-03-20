@@ -1,6 +1,7 @@
 .projects-cards_container {
   width: 80%;
   margin: auto;
+  padding-bottom: 80px;
   display: flex;
   flex-direction: column;
 }

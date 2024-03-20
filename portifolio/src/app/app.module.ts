@@ -14,6 +14,8 @@ import { ProjectsCardComponent } from './components/projects-card/projects-card.
 import { CardsComponent } from './components/projects-card/cards/cards.component';
 import { CardPhotoComponent } from './components/projects-card/cards/card-photo/card-photo.component';
 import { CardLabelComponent } from './components/projects-card/cards/card-label/card-label.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { InputComponent } from './components/atom/input/input.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { CardLabelComponent } from './components/projects-card/cards/card-label/
     CardsComponent,
     CardPhotoComponent,
     CardLabelComponent,
+    ContactComponent,
+    InputComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

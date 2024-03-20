@@ -22,4 +22,10 @@ export class ButtonComponent {
   sublogo_a: string = '';
   @Input()
   sublogo_b: string = '';
+  @Input()
+  style: string = '';
+  @Input()
+  width: string = '';
+  @Input()
+  height: string = '';
 }

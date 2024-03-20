@@ -58,6 +58,15 @@
   transform: scale(1.1);
 }
 
+@media (max-width: 950px) {
+  .bigCard_text > h1 {
+    font-size: 28px;
+  }
+  .bigCard_photo > a > img {
+    width: 200px;
+  }
+}
+
 @keyframes slide-r {
   0% {
     transform: translateX(-100%);

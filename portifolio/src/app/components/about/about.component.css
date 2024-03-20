@@ -13,7 +13,7 @@
 
 .about_text {
   color: #f2f2f2;
-  width: 50%;
+  width: 600px;
 }
 
 .about_text > h1 {
@@ -33,4 +33,17 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
+}
+
+@media (max-width: 1250px) {
+  .about_body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  .about_text {
+    width: 450px;
+  }
 }

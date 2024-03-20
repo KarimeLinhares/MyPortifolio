@@ -103,6 +103,13 @@ button:hover {
   background-color: #828282;
 }
 
+@media (max-width: 950px) {
+  .title1,
+  .title2 {
+    font-size: 15px;
+  }
+}
+
 @keyframes slide-r {
   0% {
     transform: translateX(-100%);

@@ -9,3 +9,9 @@
 .techStack_imgBox > .svgs > img {
   width: 70px;
 }
+
+@media (max-width: 900px) {
+  .techStack_imgBox > .svgs > img {
+    margin: 10px;
+  }
+}

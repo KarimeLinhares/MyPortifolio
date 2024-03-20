@@ -1,15 +1,19 @@
 .container_header {
+  padding: 20px 90px 20px 90px;
+  margin-bottom: 80px;
+}
+
+.container_body {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin: 20px 90px 20px 90px;
-  padding-bottom: 80px;
 }
 
 .title_container {
   display: flex;
   flex-direction: row;
+  animation: slide-r 1s ease-out;
 }
 
 .title1 {
@@ -37,6 +41,7 @@
   flex-direction: row;
   align-items: center;
   gap: 20px;
+  animation: slide-l 1s ease-out;
 }
 
 .container_links {
@@ -96,4 +101,22 @@ button > .content {
 button:hover {
   cursor: pointer;
   background-color: #828282;
+}
+
+@keyframes slide-r {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-l {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

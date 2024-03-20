@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { LandingButtonService } from 'src/app/service/landing-button.service';
 
 @Component({
@@ -7,6 +7,9 @@ import { LandingButtonService } from 'src/app/service/landing-button.service';
   styleUrls: ['./menu-bar.component.css'],
 })
 export class MenuBarComponent {
+  @Input()
+  id: string = '';
+
   constructor(private LandingButtonService: LandingButtonService) {}
   scrollToSection(): void {
     this.LandingButtonService.scrollToSection('target-section');

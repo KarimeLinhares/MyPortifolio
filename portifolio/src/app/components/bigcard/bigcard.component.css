@@ -11,6 +11,10 @@
   gap: 100px;
 }
 
+.bigCard_text {
+  animation: slide-r 1s ease-out;
+}
+
 .bigCard_text > h5 {
   color: #910a67;
   font-size: 20px;
@@ -39,6 +43,10 @@
   font-weight: 400;
 }
 
+.bigCard_photo {
+  animation: slide-l 1s ease-out;
+}
+
 .bigCard_photo > a > img {
   width: 300px;
   border-radius: 50%;
@@ -48,4 +56,22 @@
 
 .bigCard_photo > a > img:hover {
   transform: scale(1.1);
+}
+
+@keyframes slide-r {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-l {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

@@ -4,3 +4,11 @@
 <app-techcard></app-techcard>
 <app-projects-card></app-projects-card>
 <app-contact></app-contact>
+<button
+  appBackToTop
+  class="backToTop"
+  *ngIf="showBackToTop"
+  (click)="scrollToTop()"
+>
+  Back to Top
+</button>

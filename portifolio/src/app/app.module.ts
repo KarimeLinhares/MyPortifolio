@@ -18,6 +18,7 @@ import { ContactComponent } from './components/contact/contact.component';
 import { InputComponent } from './components/atom/input/input.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { BackToTopDirective } from './directive/back-to-top.directive';
 
 @NgModule({
   declarations: [
@@ -35,6 +36,7 @@ import { FormsModule } from '@angular/forms';
     CardLabelComponent,
     ContactComponent,
     InputComponent,
+    BackToTopDirective,
   ],
   imports: [
     BrowserModule,

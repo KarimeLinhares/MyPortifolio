@@ -2,15 +2,35 @@
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #212121;
+  background-color: #910a67;
   color: #fff;
   border: none;
   padding: 10px;
-  border-radius: 5px;
+  border-radius: 50px;
   cursor: pointer;
   display: none;
+  box-shadow: -6px 5px 12px 1px rgba(0, 0, 0, 0.7);
 }
 
 .backToTop.show {
   display: block;
+}
+
+img {
+  width: 50px;
+}
+
+@media (max-width: 500px) {
+  img {
+    width: 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .backToTop {
+    padding: 5px;
+  }
+  img {
+    width: 20px;
+  }
 }

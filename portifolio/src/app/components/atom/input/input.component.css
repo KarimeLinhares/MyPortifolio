@@ -1,18 +1,22 @@
-.input {
+input {
   background: transparent;
   border: none;
   border-bottom: 2px solid #cccccc;
   width: 250px;
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  color: #cccccc;
 }
 
-.input::placeholder {
+input::placeholder {
   font-family: "Roboto Mono";
   font-size: 15px;
 }
 
-.input:focus {
+input:focus {
   font-family: "Roboto Mono";
   font-size: 15px;
   color: #cccccc;
   outline: none;
+  background: transparent;
 }

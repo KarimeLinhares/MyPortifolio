@@ -1,19 +1,15 @@
 .about_container {
-  width: 80%;
-  margin: auto;
-  padding-bottom: 80px;
-}
-
-.about_body {
   display: flex;
-  justify-content: center;
+  flex-direction: row;
   align-items: center;
-  gap: 100px;
+  justify-content: center;
+  padding-bottom: 80px;
 }
 
 .about_text {
   color: #f2f2f2;
   width: 600px;
+  padding: 25px;
 }
 
 .about_text > h1 {
@@ -23,6 +19,7 @@
 
 .about_text > p {
   font-family: "Roboto";
+  font-size: 18px;
   font-weight: 100;
   text-align: justify;
 }
@@ -32,18 +29,30 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  gap: 20px;
+  padding: 25px;
 }
 
-@media (max-width: 1250px) {
-  .about_body {
+@media (max-width: 950px) {
+  .about_text {
+    width: 400px;
+  }
+  .about_text > h1 {
+    font-size: 20px;
+  }
+
+  .about_text > p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 755px) {
+  .about_text {
+    width: 350px;
+  }
+  .about_container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    gap: 30px;
-  }
-  .about_text {
-    width: 450px;
   }
 }

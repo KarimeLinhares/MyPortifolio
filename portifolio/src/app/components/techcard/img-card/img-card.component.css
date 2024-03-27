@@ -1,17 +1,11 @@
-.techStack_container {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.techStack_imgBox > .svgs > img {
+.svgs > img {
+  margin: 10px;
   width: 70px;
 }
 
-@media (max-width: 900px) {
-  .techStack_imgBox > .svgs > img {
-    margin: 10px;
+@media (max-width: 685px) {
+  .svgs > img {
+    width: 40px;
+    margin: 5px;
   }
 }

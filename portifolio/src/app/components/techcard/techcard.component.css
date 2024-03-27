@@ -1,19 +1,18 @@
 .techStack_container {
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   padding-bottom: 120px;
 }
 
-.techStack_body {
+.techStack_text {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  text-align: center;
-}
-
-.techStack_text {
+  justify-content: center;
   color: #f2f2f2;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .techStack_text > h3 {
@@ -43,4 +42,16 @@
   gap: 10px;
   padding: 50px;
   box-shadow: 2px 4px 18px 4px rgba(0, 0, 0, 0.75);
+}
+
+@media (max-width: 685px) {
+  .tech_row {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 420px) {
+  .tech_row {
+    padding: 30px;
+  }
 }

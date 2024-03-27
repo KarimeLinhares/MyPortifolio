@@ -17,6 +17,7 @@ import { CardLabelComponent } from './components/projects-card/cards/card-label/
 import { ContactComponent } from './components/contact/contact.component';
 import { InputComponent } from './components/atom/input/input.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     ContactComponent,
     InputComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FormsModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })

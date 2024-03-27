@@ -1,17 +1,14 @@
 .bigCard_container {
-  width: 80%;
-  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
   padding-bottom: 80px;
 }
 
-.bigCard_body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 100px;
-}
-
 .bigCard_text {
+  padding: 20px;
   animation: slide-r 1s ease-out;
 }
 
@@ -44,6 +41,7 @@
 }
 
 .bigCard_photo {
+  padding: 20px;
   animation: slide-l 1s ease-out;
 }
 
@@ -59,11 +57,50 @@
 }
 
 @media (max-width: 950px) {
+  .bigCard_container {
+    gap: 0px;
+  }
   .bigCard_text > h1 {
-    font-size: 28px;
+    font-size: 30px;
   }
   .bigCard_photo > a > img {
     width: 200px;
+  }
+}
+
+@media (max-width: 560px) {
+  .bigCard_text > h1 {
+    font-size: 20px;
+  }
+  .bigCard_photo > a > img {
+    width: 150px;
+  }
+  .bigCard_text > h5 {
+    font-size: 15px;
+  }
+  .bigCard_text > p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 415px) {
+  .bigCard_text > h1 {
+    font-size: 17px;
+  }
+}
+
+@media (max-width: 380px) {
+  .bigCard_text > h1 {
+    font-size: 15px;
+  }
+  .bigCard_photo > a > img {
+    width: 120px;
+  }
+  .bigCard_text > h5 {
+    font-size: 12px;
+  }
+  .bigCard_text > p {
+    font-size: 10px;
   }
 }
 

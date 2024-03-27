@@ -11,6 +11,7 @@
   border-radius: 8px;
   box-shadow: -9px 7px 27px 0px rgba(41, 41, 41, 0.75);
   text-decoration: none;
+  cursor: default;
 }
 
 .container:hover {

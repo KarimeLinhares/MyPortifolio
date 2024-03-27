@@ -1,6 +1,8 @@
 .container {
-  width: 80%;
-  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 80px;
 }
 
@@ -25,41 +27,58 @@
 }
 
 .container_body {
-  background-color: #363535;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  width: 720px;
+  background-color: #363535;
   border: 2px solid #910a67;
   border-radius: 13px;
   box-shadow: -9px 7px 27px 0px rgba(41, 41, 41, 0.75);
 }
 
-.form {
+.container_form > form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  gap: 50px;
-  padding: 50px;
+  justify-content: center;
+  padding: 20px;
 }
 
-.info_container {
+.form_data {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  gap: 100px;
+  gap: 50px;
+  padding: 30px;
 }
 
-.info_container > .info {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
+input {
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid #cccccc;
+  width: 250px;
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  color: #cccccc;
 }
 
-.message {
-  width: 100%;
+input::placeholder {
+  font-family: "Roboto Mono";
+  font-size: 15px;
+}
+
+input:focus {
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  color: #cccccc;
+  outline: none;
+  background: transparent;
+}
+
+.form_text-area > textarea {
+  width: 600px;
   height: 150px;
   padding: 12px 20px;
   box-sizing: border-box;
@@ -67,16 +86,109 @@
   background: transparent;
   border: 2px solid #cccccc;
   border-radius: 13px;
+  font-family: "Roboto Mono";
+  font-size: 15px;
+  color: #cccccc;
 }
 
-.message::placeholder {
+textarea::placeholder {
   font-family: "Roboto Mono";
   font-size: 15px;
 }
 
-.message:focus {
+textarea:focus {
   outline: none;
   font-family: "Roboto Mono";
   font-size: 15px;
   color: #cccccc;
+}
+
+button {
+  width: 200px;
+  height: 50px;
+  margin: 20px;
+  border-radius: 13px;
+  border: 2px solid #910a67;
+  background-color: transparent;
+  color: #fff;
+  font-family: Roboto Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+button:hover {
+  cursor: pointer;
+  background-color: #828282;
+}
+
+@media (max-width: 800px) {
+  .container_body {
+    width: 600px;
+  }
+  .form_data > .name > input,
+  .form_data > .email > input {
+    width: 200px;
+  }
+
+  .form_text-area > textarea {
+    width: 500px;
+  }
+}
+
+@media (max-width: 650px) {
+  .container_body {
+    width: 500px;
+  }
+
+  .form_data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .form_data > .name > input,
+  .form_data > .email > input {
+    width: 250px;
+  }
+
+  .form_text-area > textarea {
+    width: 400px;
+  }
+}
+
+@media (max-width: 550px) {
+  .container_body {
+    width: 400px;
+  }
+
+  .form_text-area > textarea {
+    width: 300px;
+  }
+}
+
+@media (max-width: 450px) {
+  .container_body {
+    width: 300px;
+  }
+
+  .form_data > .name > input,
+  .form_data > .email > input {
+    width: 180px;
+  }
+
+  .form_text-area > textarea {
+    width: 200px;
+  }
+}
+
+@media (max-width: 360px) {
+  .text > h1 {
+    font-size: 25px;
+  }
+
+  .text > p {
+    font-size: 15px;
+  }
 }

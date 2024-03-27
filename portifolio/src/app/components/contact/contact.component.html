@@ -4,5 +4,40 @@
     <p>If you liked some of my work, send me a mail.</p>
     <p>Let's get Connected!</p>
   </div>
-  <div class="container_body"></div>
+  <div class="container_body">
+    <div class="container_form">
+      <form #formDirective="ngForm" (ngSubmit)="onSubmit(formDirective.value)">
+        <div class="form_data">
+          <div class="name">
+            <input
+              type="text"
+              name="name"
+              [(ngModel)]="name"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+          <div class="email">
+            <input
+              type="email"
+              name="email"
+              [(ngModel)]="email"
+              placeholder="Email Address"
+              required
+            />
+          </div>
+        </div>
+        <div class="form_text-area">
+          <textarea
+            name="message"
+            [(ngModel)]="message"
+            placeholder="Your Message"
+            rows="10"
+            required
+          ></textarea>
+        </div>
+        <button type="submit">Submit Form</button>
+      </form>
+    </div>
+  </div>
 </div>

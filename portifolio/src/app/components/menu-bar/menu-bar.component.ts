@@ -10,8 +10,15 @@ export class MenuBarComponent {
   @Input()
   id: string = '';
 
+  showLinks = false;
+
   constructor(private LandingButtonService: LandingButtonService) {}
-  scrollToSection(): void {
-    this.LandingButtonService.scrollToSection('target-section');
+
+  toggleLinks(): void {
+    this.showLinks = !this.showLinks;
+  }
+
+  scrollToSection(sectionId: string): void {
+    this.LandingButtonService.scrollToSection(sectionId);
   }
 }

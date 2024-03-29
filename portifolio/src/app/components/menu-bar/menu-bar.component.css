@@ -44,31 +44,65 @@
   animation: slide-l 1s ease-out;
 }
 
-.container_links {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
 .icons {
   width: 20px;
   height: 20px;
   margin-right: 5px;
 }
 
-.link {
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.links > button {
+  width: 200px;
+  height: 50px;
+  border-radius: 13px;
+  border: 2px solid #910a67;
+  background-color: transparent;
   color: #fff;
   font-family: Roboto Mono;
   font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  display: none;
+}
+
+::ng-deep .mat-mdc-menu-item-text > a {
+  text-decoration: none;
+  color: #fff;
+  font-family: Roboto Mono;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+}
+
+::ng-deep .mat-mdc-menu-item-text > a:hover {
+  color: #910a67;
+}
+
+::ng-deep .mat-mdc-menu-content {
+  background-color: #828282;
+}
+
+.links > a {
+  color: #fff;
+  font-family: Roboto Mono;
+  font-size: 20px;
+  font-style: normal;
   font-weight: 700;
   text-decoration: none;
 }
 
-.link:hover {
-  text-decoration: underline;
+.links > a:hover {
+  color: #910a67;
 }
 
-button {
+.contact > button {
   width: 200px;
   height: 50px;
   border-radius: 13px;
@@ -76,7 +110,7 @@ button {
   background-color: transparent;
 }
 
-button > .content {
+.contact > button > .content {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -103,19 +137,11 @@ button:hover {
   background-color: #828282;
 }
 
-@media (max-width: 950px) {
-  .title1,
-  .title2 {
+@media (max-width: 1095px) {
+  .links > a {
     font-size: 15px;
   }
-}
-
-@media (max-width: 560px) {
-  .title1,
-  .title2 {
-    font-size: 12px;
-  }
-  button {
+  .contact > button {
     width: 150px;
     height: 25px;
   }
@@ -128,9 +154,57 @@ button:hover {
   }
 }
 
+@media (max-width: 950px) {
+  .title1,
+  .title2 {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 860px) {
+  .links > button {
+    display: block;
+    width: 150px;
+    height: 25px;
+    font-size: 12px;
+  }
+
+  .links > a {
+    display: none;
+  }
+}
+
+@media (max-width: 650px) {
+  .container_contacts {
+    flex-direction: column;
+    gap: 5px;
+  }
+}
+
+@media (max-width: 560px) {
+  .title1,
+  .title2 {
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 380px) {
   .title1,
   .title2 {
+    font-size: 10px;
+  }
+  .links > button {
+    width: 80px;
+    height: 25px;
+  }
+  .contact > button {
+    width: 80px;
+    height: 25px;
+  }
+  .contact > button > .content > img {
+    display: none;
+  }
+  .contact > button > .content > h1 {
     font-size: 10px;
   }
 }

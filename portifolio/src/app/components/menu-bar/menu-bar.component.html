@@ -8,11 +8,62 @@
     </div>
   </div>
   <div class="container_contacts">
-    <button (click)="scrollToSection()">
-      <div class="content">
-        <img src="../../../assets/email_send.svg" />
-        <h1>Contact Me</h1>
-      </div>
-    </button>
+    <div class="links">
+      <button mat-button [matMenuTriggerFor]="menu">Menu</button>
+      <mat-menu #menu="matMenu">
+        <button mat-menu-item>
+          <a
+            href="https://github.com/KarimeLinhares"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+        </button>
+        <button mat-menu-item>
+          <a
+            href="https://www.linkedin.com/in/karimelinhares/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </button>
+        <button mat-menu-item>
+          <a href="javascript:void(0)" (click)="scrollToSection('section2')"
+            >Projects</a
+          >
+        </button>
+        <button mat-menu-item>
+          <a href="javascript:void(0)" (click)="scrollToSection('section3')"
+            >Tech Stacks</a
+          >
+        </button>
+      </mat-menu>
+      <a
+        href="https://github.com/KarimeLinhares"
+        target="_blank"
+        rel="noopener noreferrer"
+        >GitHub</a
+      >
+      <a
+        href="https://www.linkedin.com/in/karimelinhares/"
+        target="_blank"
+        rel="noopener noreferrer"
+        >LinkedIn</a
+      >
+      <a href="javascript:void(0)" (click)="scrollToSection('section2')"
+        >Projects</a
+      >
+      <a href="javascript:void(0)" (click)="scrollToSection('section3')"
+        >Tech Stacks</a
+      >
+    </div>
+    <div class="contact">
+      <button (click)="scrollToSection('section1')">
+        <div class="content">
+          <img src="../../../assets/email_send.svg" />
+          <h1>Contact Me</h1>
+        </div>
+      </button>
+    </div>
   </div>
 </div>

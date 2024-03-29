@@ -1,3 +1,5 @@
+import { MatMenuModule } from '@angular/material/menu';
+import { MatButtonModule } from '@angular/material/button';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
@@ -43,6 +45,8 @@ import { BackToTopDirective } from './directive/back-to-top.directive';
     AppRoutingModule,
     BrowserAnimationsModule,
     FormsModule,
+    MatButtonModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
